@@ -1,0 +1,90 @@
+@import './base.css';
+
+#app {
+  /* max-width: 1280px; */
+  margin: 0 auto;
+  /* padding: 2rem; */
+  font-weight: normal;
+  width: 100%;
+  overflow: hidden;
+}
+
+.wrapper {
+  position: relative;
+  padding-top: 70px;
+}
+
+.logo img {
+  width: 150px;
+  object-fit: contain;
+  padding-left: 26px;
+}
+
+.logo-drawer {
+  margin-top: 5vw;
+}
+
+.logo-drawer img {
+  width: 200px;
+}
+
+.logo::before {
+  content: '';
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  right: 26px;
+  z-index: -1;
+  background-color: #fff;
+  transform: skew(-26deg);
+}
+
+a,
+.green {
+  text-decoration: none;
+  color: #fff;
+  transition: 0.4s;
+  padding: 3px;
+}
+
+.white {
+  color: white !important;
+}
+
+.drawer-item .v-list-item-title {
+  font-size: 1.3rem;
+}
+
+.nav-text {
+  font-size: 0.9rem;
+}
+
+@media (hover: hover) {
+  a:hover {
+    background-color: #42a5f5;
+    border-radius: 15px;
+  }
+}
+@media (min-width: 960px) and (max-width: 1023px) {
+  .wrapper {
+    padding-top: 80px;
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    display: flex;
+    place-items: center;
+  }
+
+  #app {
+    display: grid;
+    grid-template-columns: 1fr;
+    /* padding: 0 2rem; */
+  }
+
+  .wrapper {
+    padding-top: 80px;
+  }
+}
