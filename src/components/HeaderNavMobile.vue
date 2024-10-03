@@ -7,7 +7,7 @@
           :height="60"
           aspect-ratio="16/9"
           cover
-          src="./src/assets/taxpod-logo-2.png"
+          :src="taxpodLogo"
           class="logo"
         ></v-img>
       </RouterLink>
@@ -24,7 +24,7 @@
           :height="60"
           aspect-ratio="16/9"
           cover
-          src="./src/assets/taxpod-logo-2.png"
+          :src="taxpodLogo"
           class="logo-drawer"
         ></v-img>
         <v-col>
@@ -41,31 +41,35 @@
 
 <script setup>
 import { RouterLink } from 'vue-router'
+import taxpodLogo from '@/assets/taxpod-logo-2.png'
 </script>
 <script>
 export default {
-  data: () => ({
-    drawer: false,
-    group: null,
-    items: [
-      {
-        title: 'Courses',
-        value: 'Courses'
-      },
-      {
-        title: 'About',
-        value: 'About'
-      },
-      {
-        title: 'Community',
-        value: 'Community'
-      },
-      {
-        title: 'Contact Us',
-        value: 'buzz'
-      }
-    ]
-  })
+  data() {
+    return {
+      drawer: false,
+      group: null,
+      items: [
+        {
+          title: 'Courses',
+          value: 'Courses'
+        },
+        {
+          title: 'About',
+          value: 'About'
+        },
+        {
+          title: 'Community',
+          value: 'Community'
+        },
+        {
+          title: 'Contact Us',
+          value: 'buzz'
+        }
+      ],
+      taxpodLogo // Include taxpodLogo here
+    }
+  }
 }
 </script>
 

@@ -4,7 +4,7 @@
       class="d-flex flex-column justify-center align-start first-card rounded-0"
       elevation="0"
       color="transparent"
-      image="./src/assets/platform-light-bg.jpg"
+      :image="platformBg"
       width="100%"
     >
       <v-card-title class="text-h5 text-sm-h4 first-card-title">Courses and Webinars</v-card-title>
@@ -79,6 +79,7 @@
 </template>
 
 <script>
+import platformBg from '@/assets/platform-light-bg.jpg'
 import courses from '@/data/courses.json'
 import { useHead } from '@vueuse/head' // Import useHead for meta handling
 export default {
@@ -124,7 +125,8 @@ export default {
       page: 1,
       itemsPerPage: 6,
       //   categories: ['All', 'Course', 'Webinar'],
-      sortOrder: null // Default sort order
+      sortOrder: null, // Default sort order
+      platformBg
     }
   },
   computed: {

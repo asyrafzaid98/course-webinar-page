@@ -8,7 +8,7 @@
             :height="80"
             aspect-ratio="16/9"
             cover
-            src="./src/assets/taxpod-logo-2.png"
+            :src="taxpodLogo"
             class="logo"
           ></v-img>
         </RouterLink>
@@ -38,11 +38,21 @@
   </header>
 </template>
 
-<script setup lang="ts">
+<script>
+import taxpodLogo from '@/assets/taxpod-logo-2.png'
 import { RouterLink } from 'vue-router'
 import { ref } from 'vue'
 
 const search = ref('')
+
+export default {
+  name: 'YourComponent',
+  data() {
+    return {
+      taxpodLogo
+    }
+  }
+}
 </script>
 
 <style scoped>
