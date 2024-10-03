@@ -75,6 +75,7 @@ For the purpose of this project, a mock JSON file is used to simulate loading th
 
 ### Sample Data Structure
 
+```sh
 [
   {
     "id": 1,
@@ -93,6 +94,7 @@ For the purpose of this project, a mock JSON file is used to simulate loading th
     "status": "past"
   }
 ]
+```
 
 
 ### SEO and Performance 
