@@ -4,7 +4,7 @@
       class="d-flex flex-column justify-center align-start first-card rounded-0"
       elevation="0"
       color="transparent"
-      image="src/assets/platform-light-bg.jpg"
+      image="./src/assets/platform-light-bg.jpg"
       width="100%"
     >
       <v-card-title class="text-h5 text-sm-h4 first-card-title">Courses and Webinars</v-card-title>

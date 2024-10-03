@@ -8,7 +8,7 @@
             :height="80"
             aspect-ratio="16/9"
             cover
-            src="src/assets/taxpod-logo-2.png"
+            src="./src/assets/taxpod-logo-2.png"
             class="logo"
           ></v-img>
         </RouterLink>

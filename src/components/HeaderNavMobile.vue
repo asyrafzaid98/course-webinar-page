@@ -7,7 +7,7 @@
           :height="60"
           aspect-ratio="16/9"
           cover
-          src="src/assets/taxpod-logo-2.png"
+          src="./src/assets/taxpod-logo-2.png"
           class="logo"
         ></v-img>
       </RouterLink>
@@ -24,7 +24,7 @@
           :height="60"
           aspect-ratio="16/9"
           cover
-          src="src/assets/taxpod-logo-2.png"
+          src="./src/assets/taxpod-logo-2.png"
           class="logo-drawer"
         ></v-img>
         <v-col>
