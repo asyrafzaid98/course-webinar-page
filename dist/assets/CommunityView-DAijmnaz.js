@@ -1,0 +1,1 @@
+import{_ as o,c as s,f as t,o as n}from"./index-CYfXavqO.js";const a={},c={class:"about"};function r(i,e){return n(),s("div",c,e[0]||(e[0]=[t("h1",null,"This is an community page",-1)]))}const m=o(a,[["render",r]]);export{m as default};
